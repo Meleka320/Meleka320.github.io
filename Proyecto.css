@@ -1,0 +1,10 @@
+body{
+    width: 500px;
+}
+#grieta{
+    margin: 50%;
+}
+video{
+    float: right;
+    width: 300px;
+}
