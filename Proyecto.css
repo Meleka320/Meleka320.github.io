@@ -1,8 +1,8 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
-    margin: 0;
+    margin: 0 auto;
     color: black;
     background-color: aqua;
 }
@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 15px ;
 }
 
 nav ul li a {
@@ -42,48 +42,20 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    background: white;
-    margin: 20px auto;
-    max-width: 800px;
-    
-    
+    background-color: white;
+    margin: 0 auto;
+    width: 1200px;  
 }
-
-section {
-    margin-bottom: 20px;
-}
-
-h1{
-    color: white;
-}
-h2 {
-    color: black;
-}
-
-footer {
-    background-color: black;
-    color: #fff;
+footer{
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
 }
-
-section#rangos ul, section#jugadas ol {
-    margin-left: 20px;
-    padding-left: 20px;
-    list-style: square;
-}
-
-section#jugadas ol {
-    list-style: decimal;
-}
-
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-#lacabra{
-    width: 800px;
+#ekko{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    
 }
