@@ -1,36 +1,92 @@
-body{
-    background-color: lightgrey;
-    margin: 0 auto;
-}
-#grieta{
-    margin: 0 auto;
-    text-align: center;
-}
-video{
-    margin-left: 30px;
-    width: 300px;
-}
-p{
-    text-align: center;
-}
-li{
-    height: 50px;
-    background-color: green;
-    border: 1px black solid;
-    margin: 3px;
-    text-align: center;
-    list-style-type: none;
-    width: 500px;
-    
-}
-ol{
-    margin: 0 auto;
-    
-}
-h1{
-    text-align: center;
-    background-color: crimson;
-    color: white;
-    height: 50px;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: aqua;
+}
+
+header {
+    background: #1c1c1e;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    
+    
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1{
+    color: white;
+}
+h2 {
+    color: #1c1c1e;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+section#rangos ul, section#jugadas ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style: square;
+}
+
+section#jugadas ol {
+    list-style: decimal;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+#lacabra{
+    width: 800px;
 }
