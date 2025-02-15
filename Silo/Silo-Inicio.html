@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League of Legends - Estrategia y Gameplay</title>
-   
     <style>
-        body { 
+        body {
             font-family: Arial, sans-serif;
-            margin: 20px; 
+            margin: 20px;
             padding: 0;
             background-color: blue;
-         }
-        #chocobollo { 
-            width: 800px; 
-            margin: auto; 
-            background: white; 
-            padding: 20px; 
-            border-radius: 10px 10px 10px 10px;
         }
-        h1, h2 { 
-            color: black ;
+
+        #chocobollo {
+            width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1,
+        h2 {
+            color: black;
+        }
+
+        #Chistorra {
+            position: relative;
+            display: inline-block;
+        }
+
+        #alitas {
+            display: none;
+            position: absolute;
+            background-color: aliceblue
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        #Chistorra:hover #alitas {
+            display: block;
+        }
+
+        #alitas a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        #alitas a:hover {
+            background-color: aliceblue;
+        }
+
+        #Salchipapa {
+            background-color: green;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 768px) {
+            #alitas {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
+
 <body>
+
+    
     <div id="chocobollo">
+
+        <div> <a href="/index.html"></a>🛖</div>
+        <nav>
+            <div id="Chistorra">
+                <button id="Salchipapa">Roles</button>
+                <div id="alitas">
+                    <a href="Toplaner.html">Top</a>
+                    <a href="Jungla.html">Jungla</a>
+                    <a href="Mid.html">Mid</a>
+                    <a href="Adc.html">ADC</a>
+                    <a href="Support.html">Soporte</a>
+                </div>
+            </div>
+        </nav>
+
         <h1>League of Legends - Estrategia y Gameplay</h1>
-        <p>Estrategia y gameplay de League of Legends. Aquí encontrarás información detallada para mejorar tus habilidades en cada rol.</p>
-        
+        <p>Estrategia y gameplay de League of Legends. Aquí encontrarás información detallada para mejorar tus
+            habilidades en cada rol.</p>
+
         <h2>Roles en League of Legends</h2>
         <ul>
-            <li><strong> <a href="Toplaner.html">Top</a>:La línea superior suele estar dominada por campeones tanque o duelistas.</li>
-            <li><strong> <a href="Jungla.html">Jungla</a>: Se encarga de controlar la jungla, asegurar objetivos y asistir a las líneas.</li>
-            <li><strong> <a href="Mid.html">Mid</a>: Rol clave con magos o asesinos que impactan en el mapa.</li>
-            <li><strong> <a href="Adc.html">ADC</a>: Daño físico a distancia, depende de un buen soporte.</li>
-            <li><strong> <a href="Support.html">Soporte </a>: Protege y ayuda al ADC, controla visión y establece jugadas.</li>
+            <li><strong>Top</strong>: La línea superior suele estar dominada por campeones tanque o duelistas.</li>
+            <li><strong>Jungla</strong>: Se encarga de controlar la jungla, asegurar objetivos y asistir a las líneas.
+            </li>
+            <li><strong>Mid</strong>: Rol clave con magos o asesinos que impactan en el mapa.</li>
+            <li><strong>ADC</strong>: Daño físico a distancia, depende de un buen soporte.</li>
+            <li><strong>Soporte</strong>: Protege y ayuda al ADC, controla visión y establece jugadas.</li>
         </ul>
     </div>
 </body>
+
 </html>
