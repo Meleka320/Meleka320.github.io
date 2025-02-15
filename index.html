@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
+  
 <script type="application/ld+json">
 [
   {
@@ -83,18 +83,25 @@
         <img src="Imagenes/titulolol.avif" alt="titulo">
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#historia">Historia</a></li>
-            <li><a href="#roles">Roles</a></li>
-            <li><a href="#monstruos">Monstruos de la jungla</a></li>
-            <li><a href="#arcane">Arcane</a></li>
-            <li><a href="#jugadas">Mejores jugadas</a></li>
-            <li><a href="#faker">Faker</a></li>
-            <li><a href="Enlaces/index2.html">Enlaces</a></li>
-            <li><a href="Silo/Silo-Inicio.html">Informacion detallada</a></li>
-        </ul>
-    </nav>
+   <nav>
+      <div class="menu-icon" onclick="toggleMenu()">🍔</div>
+      <ul id="nav-menu">
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#monstruos">Monstruos de la jungla</a></li>
+          <li><a href="#arcane">Arcane</a></li>
+          <li><a href="#jugadas">Mejores jugadas</a></li>
+          <li><a href="#faker">Faker</a></li>
+          <li><a href="Enlaces/index2.html">Enlaces</a></li>
+          <li><a href="Silo/Silo-Inicio.html">Informacion detallada</a></li>
+      </ul>
+  </nav>
+    <script>
+      function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+    </script>
 
     <main>
         <section id="historia">
