@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,34 +14,66 @@
             color: white;
             text-align: center;
         }
+
         #Adc {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: purple;
             border-radius: 10px 10px 10px 10px;
-           
         }
+
         h1 {
             color: yellow;
         }
+
         p {
             font-size: 18px;
-            
         }
+
+        .breadcrumbs {
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: yellow;
+        }
+
         @media (max-width: 768px) {
             body {
                 font-size: 14px;
             }
+
+            #Adc {
+                width: 90%;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
+
 <body>
+    <nav class="breadcrumbs">
+        <a href="Silo-Inicio.html">🏠</a> /
+        <a href="index.html">Inicio</a> /
+        <a href="index.html#roles">Roles</a> /
+        <span>ADC</span>
+    </nav>
+
     <div id="Adc">
-        <a href="Silo-Inicio.html">🏠</a>
         <h1>¿Qué es un ADC?</h1>
-        <p>En League of Legends, el ADC (Attack Damage Carry) es el jugador que ocupa la línea inferior del mapa junto con el soporte. 
-           Suele jugar campeones a distancia con alto daño de ataque que escalan en el juego tardío.</p>
+        <p>En League of Legends, el ADC (Attack Damage Carry) es el jugador que ocupa la línea inferior del mapa junto
+            con el soporte.
+            Suele jugar campeones a distancia con alto daño de ataque que escalan en el juego tardío.</p>
         <p>Su función principal es:</p>
         <ul>
             <li>Infligir la mayor cantidad de daño sostenido en peleas de equipo.</li>
@@ -50,4 +83,5 @@
         <p>Algunos campeones populares en la bot lane son Jinx, Kai'Sa, Vayne y Aphelios.</p>
     </div>
 </body>
+
 </html>
