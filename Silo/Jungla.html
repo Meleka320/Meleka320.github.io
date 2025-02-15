@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,33 +14,66 @@
             color: white;
             text-align: center;
         }
+
         #jung {
             width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: purple;
             border-radius: 10px 10px 10px 10px;
-            
         }
+
         h1 {
             color: yellow;
         }
+
         p {
             font-size: 18px;
-            
         }
+
+        .breadcrumbs {
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: yellow;
+        }
+
         @media (max-width: 768px) {
             body {
                 font-size: 14px;
             }
+
+            #jung {
+                width: 90%;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
+
 <body>
+    <nav class="breadcrumbs">
+        <a href="Silo-Inicio.html">🏠</a> /
+        <a href="index.html">Inicio</a> /
+        <a href="index.html#roles">Roles</a> /
+        <span>Jungla</span>
+    </nav>
+
     <div id="jung">
-        <a href="Silo-Inicio.html">🏠</a>
         <h1>¿Qué es un Jungla?</h1>
-        <p>En League of Legends, el <strong>Jungla</strong> es el jugador que no ocupa una línea fija, sino que se dedica a moverse por la jungla del mapa, derrotando monstruos neutrales y apoyando a su equipo con emboscadas.</p>
+        <p>En League of Legends, el <strong>Jungla</strong> es el jugador que no ocupa una línea fija, sino que se
+            dedica a moverse por la jungla del mapa, derrotando monstruos neutrales y apoyando a su equipo con
+            emboscadas.</p>
         <p>Su función principal es:</p>
         <ul>
             <li>Controlar los objetivos neutrales como el Dragón y el Barón Nashor.</li>
@@ -49,4 +83,5 @@
         <p>Algunos campeones populares en la jungla son <em>Lee Sin, Evelynn, Kha'Zix y Sejuani</em>.</p>
     </div>
 </body>
+
 </html>
