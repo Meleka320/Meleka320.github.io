@@ -1,4 +1,5 @@
 
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -76,4 +77,68 @@ footer{
     text-align: center;
     margin: 0 auto;
     width: 300px;
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #foton {
+        height: 150px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    #ekko {
+        width: 100%;
+        height: auto;
+    }
+
+    #voltereta, #silence {
+        width: 100%;
+        height: auto;
+    }
+
+   
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
