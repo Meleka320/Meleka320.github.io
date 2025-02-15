@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,34 +14,65 @@
             color: white;
             text-align: center;
         }
+
         #mid {
             width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: purple;
             border-radius: 10px 10px 10px 10px;
-            
         }
+
         h1 {
             color: yellow;
         }
+
         p {
             font-size: 18px;
-            
         }
+
+        .breadcrumbs {
+            padding: 10px;
+            background-color: red;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: yellow;
+        }
+
         @media (max-width: 768px) {
             body {
                 font-size: 14px;
             }
+
+            #mid {
+                width: 90%;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
+
 <body>
+    <nav class="breadcrumbs">
+        <a href="Silo-Inicio.html">🏠</a> /
+        <a href="index.html">Inicio</a> /
+        <a href="index.html#roles">Roles</a> /
+        <span>Midlaner</span>
+    </nav>
+
     <div id="mid">
-        <a href="Silo-Inicio.html">🏠</a>
         <h1>¿Qué es un Midlaner?</h1>
-        <p>En League of Legends, el <strong>Midlaner</strong> es el jugador que ocupa la línea central del mapa. 
-           Suele jugar campeones con alto daño en ráfagas como magos o asesinos.</p>
+        <p>En League of Legends, el <strong>Midlaner</strong> es el jugador que ocupa la línea central del mapa.
+            Suele jugar campeones con alto daño en ráfagas como magos o asesinos.</p>
         <p>Su función principal es:</p>
         <ul>
             <li>Controlar el centro del mapa y generar presión en otras líneas.</li>
@@ -50,4 +82,5 @@
         <p>Algunos campeones populares en la mid lane son Ahri, Zed, Syndra y LeBlanc.</p>
     </div>
 </body>
+
 </html>
