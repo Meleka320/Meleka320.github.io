@@ -1,22 +1,21 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
     margin: 0 auto;
-    color: black;
-    background-color: aqua;
+    color: black; 
+    background-color: #f0f0f0; 
 }
 
 header {
     background: black;
-    color: white ;
-    padding: 20px ;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
 }
 
 nav {
     background: black;
-    color: white;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -28,11 +27,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 15px ;
+    margin: 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,51 +42,60 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff; 
     margin: 0 auto;
-    width: 1200px;  
+    max-width: 1200px;
+    width: 100%; 
 }
-footer{
+
+footer {
     text-align: center;
     background-color: black;
-    color: white;
+    color: #ffffff;
     padding: 20px;
-    
 }
-#ekko{
+
+#ekko {
     margin: 0 auto;
     text-align: center;
     display: block;
-    
 }
-#foton{
+
+#foton {
     height: 200px;
     width: 350px;
     padding: 10px;
     display: inline-block;
     text-align: center;
 }
-#voltereta{
+
+#voltereta {
     display: block;
     text-align: center;
     margin: 0 auto;
 }
-#silence{
+
+#silence {
     display: block;
     text-align: center;
     margin: 0 auto;
     width: 300px;
 }
-#titulo{
+
+#titulo {
     width: 100%;
 }
+
+
 @media (max-width: 480px) {
     body {
         font-size: 20px;
     }
-    #titulo{
+
+    #titulo {
         width: 100%;
     }
+
     header {
         padding: 10px;
     }
@@ -121,7 +129,6 @@ footer{
         height: auto;
     }
 
-   
     nav {
         position: relative;
     }
@@ -147,3 +154,10 @@ footer{
         cursor: pointer;
     }
 }
+
+.menu-icon:focus {
+    outline: 3px solid #00aaff;
+    outline-offset: 4px;
+}
+
+
