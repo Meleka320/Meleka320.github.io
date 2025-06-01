@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fansite dedicado a League of Legends. Aprende sobre su historia, roles, rangos y las jugadas más icónicas.">
     <meta name="keywords" content="League of Legends, LoL, Faker, jugadas, rangos, MOBA, esports">
-    <title>League of Legends</title>
+    <title>Fansite de League of Legends – Historia, Roles, Arcane y Jugadas Icónicas</title>
     <meta name="googlebot" content="index, follow">
-    <link rel="stylesheet" href="Proyecto.css">
+    <link rel="stylesheet" href="Proyecto (2).css">
     <link rel="canonical" href="https://meleka320.github.io">
     <link rel="icon" href="Imagenes/icono.jfif" type="image/png">
     <meta name="google-site-verification" content="ra_DLyP1DQX0L95uffcVedAUMiOH9Yu9Q2YG5UweC90" />
@@ -79,23 +79,31 @@
  </script>
 </head>
 <body>
-    <header>
-        <img src="Imagenes/titulolol.avif" alt="titulo">
+    <header aria-label="Cabecera del sitio">
+        <img src="Imagenes/titulolol.avif" alt="Logo del título de League of Legends">
     </header>
 
-    <nav>
-      <div class="menu-icon" onclick="toggleMenu()">🍔</div>
-      <ul id="nav-menu">
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#roles">Roles</a></li>
-          <li><a href="#monstruos">Monstruos de la jungla</a></li>
-          <li><a href="#arcane">Arcane</a></li>
-          <li><a href="#jugadas">Mejores jugadas</a></li>
-          <li><a href="#faker">Faker</a></li>
-          <li><a href="Enlaces/index2.html">Enlaces</a></li>
-          <li><a href="Silo/Silo-Inicio.html">Informacion detallada</a></li>
-      </ul>
-  </nav>
+<nav aria-label="Menú principal de navegación">
+  <div class="menu-icon" 
+       tabindex="0" 
+       role="button" 
+       aria-label="Abrir o cerrar menú de navegación"
+       onclick="toggleMenu()" 
+       onkeypress="if(event.key === 'Enter'){ toggleMenu(); }">
+    🍔
+  </div>
+  <ul id="nav-menu" role="menu" aria-label="Lista de secciones del sitio">
+      <li role="menuitem"><a href="#historia" aria-label="Ir a sección Historia">Historia</a></li>
+      <li role="menuitem"><a href="#roles" aria-label="Ir a sección Roles">Roles</a></li>
+      <li role="menuitem"><a href="#monstruos" aria-label="Ir a sección Monstruos de la jungla">Monstruos de la jungla</a></li>
+      <li role="menuitem"><a href="#arcane" aria-label="Ir a sección Arcane">Arcane</a></li>
+      <li role="menuitem"><a href="#jugadas" aria-label="Ir a sección Mejores jugadas">Mejores jugadas</a></li>
+      <li role="menuitem"><a href="#faker" aria-label="Ir a sección Faker">Faker</a></li>
+      <li role="menuitem"><a href="Enlaces/index2.html" aria-label="Ir a página de Enlaces">Enlaces</a></li>
+      <li role="menuitem"><a href="Silo/Silo-Inicio.html" aria-label="Ir a página de Información detallada">Información detallada</a></li>
+  </ul>
+</nav>
+
     <script>
       function toggleMenu() {
     var menu = document.getElementById("nav-menu");
@@ -103,66 +111,66 @@
 }
     </script>
   
-    <main>
-        <section id="historia">
-            <h2>Historia</h2>
-            <p>League of Legends (LoL) es un juego multijugador de arena de batalla en línea (MOBA) desarrollado por Riot Games. Fue lanzado en 2009 y está ambientado en el universo de <a href="https://map.leagueoflegends.com/es_ES/">Runaterra</a>, un mundo lleno de magia, conflictos y personajes únicos.</p>
+    <main aria-label="Contenido principal">
+        <section id="historia" aria-labelledby="historia-heading">
+            <h2 id="historia-heading">Historia</h2>
+            <p>League of Legends (LoL) es un juego multijugador de arena de batalla en línea (MOBA) desarrollado por Riot Games. Fue lanzado en 2009 y está ambientado en el universo de <a href="https://map.leagueoflegends.com/es_ES/" rel="noopener noreferrer" aria-label="Más información sobre Runaterra (se abre en nueva pestaña)">Runaterra</a>, un mundo lleno de magia, conflictos y personajes únicos.</p>
         </section>
 
-        <section id="roles">
-            <h2>Roles</h2>
-            <p>En League of Legends, los jugadores pueden elegir entre cinco roles principales, en los que tendran que elegir uno de los más de 150 <a href="https://www.leagueoflegends.com/es-es/champions/">campeones</a>:</p>
-            <ul>
-                <li><p><img src="Imagenes/top.jpg" alt="top" height="15px">Top: Línea superior con tanques y luchadores.</p></li>
-                <li><p><img src="Imagenes/jungla.jpg" alt="jungla" height="15px">Jungla: Soporte entre líneas.</li></p>
-                <li> <p><img src="Imagenes/mid.jpg" alt="mid" height="15px">Mid: Magos y asesinos en la línea central. </p></li>
-                <li><p><img src="Imagenes/adc.jpg" alt="adc" height="15px">Adc: Dañadores físicos en línea inferior. </p></li>
-                <li><p><img src="Imagenes/supp.jpg" alt="supp" height="15px">Soporte: Protección para el equipo.</p></li>
+        <section id="roles" aria-labelledby="roles-heading">
+            <h2 id="roles-heading">Roles</h2>
+            <p>En League of Legends, los jugadores pueden elegir entre cinco roles principales, en los que tendran que elegir uno de los más de 150 <a href="https://www.leagueoflegends.com/es-es/champions/" rel="noopener noreferrer" aria-label="Lista de campeones de League of Legends (se abre en nueva pestaña)">campeones</a>:</p>
+            <ul aria-label="Lista de roles en League of Legends">
+                <li><p><img src="Imagenes/top.jpg" alt="Icono del rol Top: luchadores y tanques" height="15px">Top: Línea superior con tanques y luchadores.</p></li>
+                <li><p><img src="Imagenes/jungla.jpg" alt="Icono del rol Jungla: control del mapa y monstruos" height="15px">Jungla: Soporte entre líneas.</li></p>
+                <li> <p><img src="Imagenes/mid.jpg" alt="Icono del rol Mid: magos y asesinos en línea central" height="15px">Mid: Magos y asesinos en la línea central. </p></li>
+                <li><p><img src="Imagenes/adc.jpg" alt="Icono del rol ADC: daño físico desde la distancia" height="15px">Adc: Dañadores físicos en línea inferior. </p></li>
+                <li><p><img src="Imagenes/supp.jpg" alt="Icono del rol Soporte: utilidad y protección al equipo" height="15px">Soporte: Protección para el equipo.</p></li>
             </ul>
             </section>
-            <section id="monstruos">
-                <h2>Monstruos de la Jungla</h2>
-                <p>*1<img src="Imagenes/baron.webp" alt="baron" id="foton"> *2<img src="Imagenes/dragon.jfif" alt="dragon" id="foton"> </p>
-                <ol>
+            <section id="monstruos" aria-labelledby="monstruos-heading">
+                <h2 id="monstruos-heading">Monstruos de la Jungla</h2>
+                <p aria-hidden="true">*1<img src="Imagenes/baron.webp" alt="Imagen del Barón Nashor, el monstruo más fuerte del mapa" id="foton"> *2<img src="Imagenes/dragon.jfif" alt="Imagen de un Dragón Elemental, otorga beneficios globales" id="foton"> </p>
+                <ol aria-label="Lista de monstruos de la jungla">
                     <li>Barón Nashor:Barón Nashor es el monstruo neutral mas poderoso del mapa, matar al Baron da el buffo Mano del Barón. Durante 3 minutos da al jugador AD y AP y ademas mejora a los subditos</li>
                     <li>Dragones: Son monstruos que dan buffos a todo el equipo dependiendo del tipo que sea el dragon.</li>
                     <li>Escurridizo: Un cangrejo modificado que da vision y velocidad en un area concreta.</li>
                     <li>Azul y Rojo: Monstruos que dan un buffo dependiendo de si matas al azul(da regeneracion de maná) o al rojo (regeneracion de vida, slow y daño verdadero).</li>
                 </ol>
-                <p>3.<img src="Imagenes/cangrejo.jfif" alt="crab" id="foton" >4.<img src="Imagenes/azul_rojo.jfif" alt="buffo" id="foton"></p>
+                <p aria-hidden="true">3.<img src="Imagenes/cangrejo.jfif" alt="crab" id="Escurridizo: cangrejo del río que da visión y velocidad" >4.<img src="Imagenes/azul_rojo.jfif" alt="Buff azul y rojo: regeneración de maná y vida respectivamente" id="foton"></p>
             </section>
-            <section id="arcane">
-                <h2>Arcane</h2>
-               <p> <img src="Imagenes/Arcane.webp" alt="Ekko" height="400px" id="ekko"> </p>
+            <section id="arcane" aria-labelledby="arcane-heading">
+                <h2 id="arcane-heading">Arcane</h2>
+               <p> <img src="Imagenes/Arcane.webp" alt="Personaje Ekko de la serie animada Arcane" height="400px" id="ekko"> </p>
                 <p> Arcane cuenta la historia del origen de dos campeonas de League of Legends, que casualmente son hermanas . Jinx, también conocida como Powder, y Vi se encuentran en bandos rivales de una guerra en ciernes entre la ciudad de Piltover y su oprimida zona marginal, Zaun.</p>
-                <h3><a href="https://es.gizmodo.com/arcane-es-por-mucho-la-serie-animada-mas-cara-jamas-realizada-2000134033">Coste</a></h3>
+                <h3><a href="https://es.gizmodo.com/arcane-es-por-mucho-la-serie-animada-mas-cara-jamas-realizada-2000134033" rel="noopener noreferrer" aria-label="Artículo sobre el coste de Arcane (se abre en nueva pestaña)">Coste</a></h3>
                 <p>Con la salida de Arcane S.2 se pudo comprobar que el coste de Arcane en su totalidad costo la friolera de 250 millones de dólares, con un máximo de 18 episodios, situándose como la serie animada más cara de la historia</p>
             </section>
-            <section id="jugadas">
-                <h2>Mejores jugadas</h2>
+            <section id="jugadas" aria-labelledby="jugadas-heading">
+                <h2 id="jugadas-heading">Mejores jugadas</h2>
                 <p>En este tema a tratar pondré lo que a mi parecer son algunas de las mejores jugadas de todos los tiempos</p>
-                <ul>
-                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimnq7_-veJAxVWVKQEHVvAAesQtwJ6BAgMEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZPCfoCVCx3U&usg=AOvVaw0vHLP_LyPOjVwJVwbNRDey&opi=89978449" >Faker vs. Ryu: </a>Esta jugada es mítica en el mundillo del LOL porque ambos estan jugando el mismo personaje y Ryu tiene la ventaja a lo que Faker le da completmaente la vuelta.</li>
-                    <li><a href="https://www.youtube.com/watch?v=fvQ9ex9EuT8" target="_blank">xPeke Backdoor</a>: En esta jugado el jugador español murciano Enrique Cedeño realiza un backdoor lo cual es tirar el nexo enemigo sin que se den cuenta.</li>
-                    <li><a href="https://www.youtube.com/watch?v=wtILSDIXAj0" target="_blank">El primer insect de la historia</a>: El insect es una jugada que consiste en usar el destello o un guardián de visión para colocarse detras del objetivo y lanzar al enemigo a tu equipo para que lo maten.</li>
+                <ul aria-label="Lista de las mejores jugadas de League of Legends">
+                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimnq7_-veJAxVWVKQEHVvAAesQtwJ6BAgMEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZPCfoCVCx3U&usg=AOvVaw0vHLP_LyPOjVwJVwbNRDey&opi=89978449" rel="noopener noreferrer" target="_blank" aria-label="Ver jugada Faker vs Ryu en YouTube (se abre en nueva pestaña)">Faker vs. Ryu: </a>Esta jugada es mítica en el mundillo del LOL porque ambos estan jugando el mismo personaje y Ryu tiene la ventaja a lo que Faker le da completmaente la vuelta.</li>
+                    <li><a href="https://www.youtube.com/watch?v=fvQ9ex9EuT8" target="_blank" rel="noopener noreferrer" aria-label="Ver jugada xPeke Backdoor en YouTube (se abre en nueva pestaña)">xPeke Backdoor</a>: En esta jugado el jugador español murciano Enrique Cedeño realiza un backdoor lo cual es tirar el nexo enemigo sin que se den cuenta.</li>
+                    <li><a href="https://www.youtube.com/watch?v=wtILSDIXAj0" target="_blank" rel="noopener noreferrer" aria-label="Ver primer insect de la historia en YouTube (se abre en nueva pestaña)">El primer insect de la historia</a>: El insect es una jugada que consiste en usar el destello o un guardián de visión para colocarse detras del objetivo y lanzar al enemigo a tu equipo para que lo maten.</li>
                 </ul>
             </section>
-            <section id="faker">
-                <h2>Faker</h2>
+            <section id="faker" aria-labelledby="faker-heading">
+                <h2 id="faker-heading">Faker</h2>
                 <p>En este apartado os voy a hablar del que para mí y mucha más gente es considerado el mejor jugador de la historia, el rey demonio, <b>Faker</b></p>
-                <img src="Imagenes/faker.gif" alt="voltereta" id="voltereta">
+                <img src="Imagenes/faker.gif" alt="Faker celebrando con una voltereta después de una partida" id="voltereta">
                 <h3>Historia</h3>
                 <p><b>Faker</b>, cuyo nombre real es Lee Sang-hyeok, es un jugador profesional de League of Legends y uno de los nombres más icónicos en la historia de los esports. Nacido el 7 de mayo de 1996 en Seúl, Corea del Sur, Faker es ampliamente considerado el mejor jugador de League of Legends de todos los tiempos.</p>
                 <h3>Logros</h3>
-                <ul>
+                <ul aria-label="Logros de Faker">
                     <li><b>Campeonatos Mundiales</b>: <b>Faker</b> ha ganado 5 títulos mundiales (2013, 2015, 2016, 2023 y 2024)</li>
                     <li><b>Torneos internacionales</b>: Ha conquistado múltiples torneos importantes como el Mid-Season Invitational (MSI).</li>
                     <li><b>Títulos regionales</b>: <b>Faker</b> y su equipo han ganado varias veces la LCK (liga coreana), una de las regiones más competitivas del mundo.</li>
                 </ul>
-                <img src="Imagenes/silencio.jfif" alt="silencio" id="silence">
+                <img src="Imagenes/silencio.jfif" alt="Faker haciendo el gesto de silencio tras una victoria" id="silence">
             </section>
         </main>
-    <footer>
+    <footer aria-label="Pie de página">
         <p>&copy; Página verídica y real del videojuego League of legends. No afiliado a Riot Games.</p>
     </footer>
 </body>
